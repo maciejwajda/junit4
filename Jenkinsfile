@@ -13,7 +13,7 @@ node {
     }
 }
 
-def withColor(Closure closure){
+void withColor(Closure closure){
     ansiColor('xterm') {
         closure()
     }
