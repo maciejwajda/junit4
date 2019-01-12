@@ -5,13 +5,6 @@ pipeline {
    }
 
    stages {
-      stage('GIT') {
-          steps{
-              git branch: 'mavenWrapper', poll: false, url: 'https://github.com/maciejwajda/junit4.git'
-          }
-
-
-      }
       stage('MVN'){
           steps{
               sh "./mvnw clean package"
