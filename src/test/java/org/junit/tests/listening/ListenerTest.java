@@ -34,5 +34,6 @@ public class ListenerTest {
         });
         core.run(OneTest.class);
         assertEquals("first second ", log);
+        assert false;
     }
 }
