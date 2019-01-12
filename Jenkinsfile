@@ -18,7 +18,7 @@ node {
 
 void withConf(Closure closure){
     ansiColor('xterm') {
-        timestamp(){
+        timestamps(){
             closure.call()
         }
     }
