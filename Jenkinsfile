@@ -13,7 +13,6 @@ pipeline {
   always {
       junit '**/target/surefire-reports/*.xml'
 
-    // One or more steps need to be included within each condition's block.
   }
 }
       }
