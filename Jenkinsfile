@@ -1,6 +1,6 @@
 
 node {
-    withColor{
+    withConf{
         try{
 
             stage ('GIT'){
@@ -16,8 +16,10 @@ node {
     }
 }
 
-void withColor(Closure closure){
+void withConf(Closure closure){
     ansiColor('xterm') {
-        closure()
+        timestamp(){
+            closure.call()
+        }
     }
 }
